@@ -81,8 +81,8 @@ def get_inputs(scf='openmm', **kwargs):
             for i in range(system.getNumForces()):
                 f = system.getForce(i)
                 f.setForceGroup(i)
-            # platform = Platform.getPlatformByName('CUDA')
-            platform = None
+            platform = Platform.getPlatformByName('CPU')
+            # platform = None
             simmd = Simulation(modeller.topology, system, integrator, platform)
             simmd.context.setPositions(modeller.positions)
             
