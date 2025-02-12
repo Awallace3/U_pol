@@ -11,6 +11,8 @@ import numpy as np
 from openmm.app import *
 from openmm import *
 from simtk.unit import *
+import os, sys
+sys.path.append('.')
 
 # Global constant to be set in set_constants()
 ONE_4PI_EPS0 = None
@@ -78,13 +80,14 @@ def get_inputs(scf='openmm', **kwargs):
             integrator.setRandomNumberSeed(123)
             pdb = PDBFile(pdb_file)
             modeller = Modeller(pdb.topology, pdb.positions)
+            print(pdb.positions)
             forcefield = ForceField(xml_file)
             modeller.addExtraParticles(forcefield)
             system = forcefield.createSystem(modeller.topology, constraints=None, rigidWater=True)
             for i in range(system.getNumForces()):
                 f = system.getForce(i)
                 f.setForceGroup(i)
-            platform = Platform.getPlatformByName('CPU')
+            platform = Platform.getPlatformByName('CUDA')
             simmd = Simulation(modeller.topology, system, integrator, platform)
             simmd.context.setPositions(modeller.positions)
 
@@ -395,7 +398,7 @@ def main():
     Dij_opt = drudeOpt(Rij, Dij_flat, Qi_shell, Qj_shell, Qi_core, Qj_core, u_scale, k, reshape=Dij.shape)
     U_ind = Uind(Rij, Dij_opt, Qi_shell, Qj_shell, Qi_core, Qj_core, u_scale, k)
     logger.info(f"OpenMM U_ind = {Uind_openmm:.4f} kJ/mol")
-    logger.info(f"Python U_ind = {U_ind:.4f} kJ/mol")
+    logger.info(f"PyTorch U_ind = {U_ind:.4f} kJ/mol")
     error_percent = abs((Uind_openmm - U_ind) / U_ind) * 100
     logger.info(f"{error_percent:.2f}% Error")
     logger.info("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n")
