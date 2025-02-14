@@ -143,3 +143,184 @@ PyTorch U_ind = -24.1479 kJ/mol
 7.49% Error
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
+Log started at: 2025-02-14 11:35:55
+Log started at: 2025-02-14 11:36:02
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Parsing XML file: ../benchmarks/OpenMM/water/water.xml
+Parsing PDB file: ../benchmarks/OpenMM/water/water.pdb
+No parameters found for atom 'O'. Using defaults.
+No parameters found for atom 'H1'. Using defaults.
+No parameters found for atom 'H2'. Using defaults.
+No parameters found for atom 'O'. Using defaults.
+No parameters found for atom 'H1'. Using defaults.
+No parameters found for atom 'H2'. Using defaults.
+Input generation completed without OpenMM dependency.
+torchmin.BFGS Minimizer completed in 0.014 seconds!!
+OpenMM U_ind = 0.0000 kJ/mol
+PyTorch U_ind = 0.0000 kJ/mol
+nan% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:50:19
+Log started at: 2025-02-14 13:50:58
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = -22.338134765625 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>-22.338134765625 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.008 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:51:05
+Log started at: 2025-02-14 13:51:16
+%%%%%%%%%%% STARTING ACNIT U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+Log started at: 2025-02-14 13:51:22
+%%%%%%%%%%% STARTING IMIDAZOLE U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+Log started at: 2025-02-14 13:51:39
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+Log started at: 2025-02-14 13:53:09
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+Log started at: 2025-02-14 13:53:18
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = -22.338134765625 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>-22.338134765625 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:53:29
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log started at: 2025-02-14 13:54:39
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = -22.338134765625 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>-22.338134765625 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.007 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:54:49
+%%%%%%%%%%% STARTING IMIDAZOLE U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = -4.921215534210205 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>-4.921215534210205 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.007 seconds!!
+OpenMM U_ind = -4.9212 kJ/mol
+PyTorch U_ind = -19.8161 kJ/mol
+75.17% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:54:55
+Log started at: 2025-02-14 13:54:59
+%%%%%%%%%%% STARTING ACNIT U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = 9.742050170898438 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>9.742050170898438 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.008 seconds!!
+OpenMM U_ind = 9.7421 kJ/mol
+PyTorch U_ind = 8.7294 kJ/mol
+11.60% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:55:06
+%%%%%%%%%%% STARTING PYRAZOLE U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log started at: 2025-02-14 13:55:17
+%%%%%%%%%%% STARTING ACNIT U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log started at: 2025-02-14 13:55:21
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log started at: 2025-02-14 13:56:04
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:56:54
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.007 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:57:03
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total Energy = -22.338134765625 kJ/mol
+<class 'openmm.openmm.NonbondedForce'>-22.338134765625 kJ/mol
+<class 'openmm.openmm.DrudeForce'>0.0 kJ/mol
+<class 'openmm.openmm.CMMotionRemover'>0.0 kJ/mol
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:57:05
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.007 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Log started at: 2025-02-14 13:57:28
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Log started at: 2025-02-14 13:57:37
+%%%%%%%%%%% STARTING WATER U_IND CALCULATION %%%%%%%%%%%%
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+torchmin.BFGS Minimizer completed in 0.006 seconds!!
+OpenMM U_ind = -22.3381 kJ/mol
+PyTorch U_ind = -24.1479 kJ/mol
+7.49% Error
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+

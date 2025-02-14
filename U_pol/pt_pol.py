@@ -54,19 +54,19 @@ def get_inputs(scf='openmm', **kwargs):
     set_constants()
     logger = kwargs['logger']
     path = kwargs['dir']
-    npz_inputs = os.path.join(path, "inputs.npz")
-    if os.path.exists(npz_inputs):
-        npz_data = np.load(npz_inputs)
+    pt_inputs = os.path.join(path, kwargs['mol'], kwargs['mol'] + ".pt")
+    if os.path.exists(pt_inputs):
+        pt_data = torch.load(pt_inputs, weights_only=False)
         # Convert numpy arrays to torch tensors
-        Rij         = torch.tensor(npz_data["Rij"], dtype=torch.float64)
-        Dij         = torch.tensor(npz_data["Dij"], dtype=torch.float64)
-        Qi_shell    = torch.tensor(npz_data["Qi_shell"], dtype=torch.float64)
-        Qj_shell    = torch.tensor(npz_data["Qj_shell"], dtype=torch.float64)
-        Qi_core     = torch.tensor(npz_data["Qi_core"], dtype=torch.float64)
-        Qj_core     = torch.tensor(npz_data["Qj_core"], dtype=torch.float64)
-        u_scale     = torch.tensor(npz_data["u_scale"], dtype=torch.float64)
-        k           = torch.tensor(npz_data["k"], dtype=torch.float64)
-        Uind_openmm = npz_data["Uind_openmm"]
+        Rij         = torch.tensor(pt_data["Rij"], dtype=torch.float64)
+        Dij         = torch.tensor(pt_data["Dij"], dtype=torch.float64)
+        Qi_shell    = torch.tensor(pt_data["Qi_shell"], dtype=torch.float64)
+        Qj_shell    = torch.tensor(pt_data["Qj_shell"], dtype=torch.float64)
+        Qi_core     = torch.tensor(pt_data["Qi_core"], dtype=torch.float64)
+        Qj_core     = torch.tensor(pt_data["Qj_core"], dtype=torch.float64)
+        u_scale     = torch.tensor(pt_data["u_scale"], dtype=torch.float64)
+        k           = torch.tensor(pt_data["k"], dtype=torch.float64)
+        Uind_openmm = pt_data["Uind_openmm"]
         return Rij, Dij, Qi_shell, Qj_shell, Qi_core, Qj_core, u_scale, k, Uind_openmm
     else:
         if openmm:
@@ -229,6 +229,13 @@ def get_inputs(scf='openmm', **kwargs):
         # np.savez(npz_inputs, Rij=Rij.numpy(), Dij=Dij.numpy(), Qi_shell=Qi_shell.numpy(), 
         #          Qj_shell=Qj_shell.numpy(), Qi_core=Qi_core.numpy(), Qj_core=Qj_core.numpy(),
         #          u_scale=u_scale.numpy(), k=k.numpy(), Uind_openmm=Uind_openmm.value_in_unit(kilojoules_per_mole))
+        # np.savez(npz_inputs, Rij=Rij.numpy(), Dij=Dij.numpy(), Qi_shell=Qi_shell.numpy(), 
+        #          Qj_shell=Qj_shell.numpy(), Qi_core=Qi_core.numpy(), Qj_core=Qj_core.numpy(),
+        #          u_scale=u_scale.numpy(), k=k.numpy(), Uind_openmm=Uind_openmm.value_in_unit(kilojoules_per_mole))
+        data = {"Rij": Rij.numpy(), "Dij": Dij.numpy(), "Qi_shell": Qi_shell.numpy(),
+                "Qj_shell": Qj_shell.numpy(), "Qi_core": Qi_core.numpy(), "Qj_core": Qj_core.numpy(),
+                "u_scale": u_scale.numpy(), "k": k.numpy(), "Uind_openmm": Uind_openmm.value_in_unit(kilojoules_per_mole)}
+        torch.save(data, pt_inputs)  # Save as a PyTorch tensor using
         
         return Rij, Dij, Qi_shell, Qj_shell, Qi_core, Qj_core, u_scale, k, Uind_openmm.value_in_unit(kilojoules_per_mole)
 
