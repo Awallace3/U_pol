@@ -92,7 +92,7 @@ def get_inputs(scf='openmm', **kwargs):
             positions = simmd.context.getState(getPositions=True).getPositions()
             
             # optimize drude positions using OpenMM
-            simmd.step(1)
+            # simmd.step(1)
             state = simmd.context.getState(getEnergy=True,getForces=True,getVelocities=True,getPositions=True)
             Uind_openmm = state.getPotentialEnergy() 
             logger.info("=-=-=-=-=-=-=-=-=-=-=-=-OpenMM Output-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
